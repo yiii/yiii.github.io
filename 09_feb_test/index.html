@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Files Showcase</title>
+</head>
+<body>
+    <h1>XTTS2 generation demo</h1>
+    
+
+    <section id="Mishel">
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Input Voice</th>
+                    <th>Generated</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">Mishel </td>
+                    <td><audio controls src="data/input/Mishel.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Mishel2.mp3"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Vasilina </td>
+                    <td><audio controls src="data/input/vasilina_cut.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Vasilina_C.mp3"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Evgeny</td>
+                    <td><audio controls src="data/input/Evgeny.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Evgeny.mp3"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Alexander</td>
+                    <td><audio controls src="data/input/Skorik_2.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Sasha_2.mp3"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Nadya</td>
+                    <td><audio controls src="data/input/Nadya.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Nadya.mp3"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Anna</td>
+                    <td><audio controls src="data/input/Anna.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Anna.mp3"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Sonya</td>
+                    <td><audio controls src="data/input/Sonya.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Sonya.mp3"></audio></td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Paola</td>
+                    <td><audio controls src="data/input/Paola_girl_gen_s50_sb75_se0_b_m2.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Paola.mp3"></audio></td>
+                </tr>
+
+                <tr>
+                    <td style="text-align: center;">Santa</td>
+                    <td><audio controls src="data/input/Santa_Claus_pre_s50_sb75_se0_b_m2.mp3"></audio></td>
+                    <td><audio controls src="data/Output/0_entrance_output_Santa.mp3"></audio></td>
+                </tr>
+            </tbody>
+        </table>
+        <t>Среднее время генерации фрагмента ≈30 секунды на GPU 3060, (GPU 3090 ≈20 сек)</t>
+    </section>
+    <section id="Full">
+        <h2>Полный текст</h2>
+        <audio controls="controls" style="width: 100%;" src="data/Full_Mishel.mp3"></audio>
+        <t>Время генерации полного текста (GPU 3090) ≈144 секунды</t>
+</body>
+</html>
