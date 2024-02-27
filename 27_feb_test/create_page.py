@@ -49,7 +49,7 @@ def generate_html(phrases, audio_map):
     </style>
 </head>
 <body>
-    <h1>XTTS2 generation demo</h1>
+    <h1>Fine tunned model demo (16 epoch, 3 batch size, 9 grad) generation demo</h1>
     <section id="Demo">
         <table border="1">
             <thead>
