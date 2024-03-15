@@ -4,6 +4,25 @@ import re
 # Define the directory
 directory = 'data'
 
+
+mapping = {
+    'audio_2024-03-12_20-39-38_Nd_1.mp3': 'A-1',
+    'audio_2024-03-12_20-39-47_Nd_2.mp3': 'A-2',
+    'Nadya.mp3': 'A-3',
+    'audio_2024-03-12_20-41-42_Ns_1.mp3': 'B-1',
+    'audio_2024-03-12_20-41-46_Ns_2.mp3': 'B-2',
+    'NastyaBarat.mp3': 'B-3',
+    'audio_2024-03-13_13-39-00_Rm_1.mp3': 'C-1',
+    'audio_2024-03-13_13-39-03_Rm_2.mp3': 'C-2',
+    'audio_2024-03-12_20-43-40_Ls_1_.mp3': 'D-1',
+    'audio_2024-03-12_20-44-14_Ls_2_.mp3': 'D-2',
+    'Anna1.mp3': 'E-1',
+    'Anna2.mp3': 'E-2',
+    'NinaVasilevna1.mp3': 'F-1',
+    'NinaVasilevna2.mp3': 'F-2',
+}
+
+
 # Initialize the HTML
 html = '''
 <html>
@@ -11,8 +30,9 @@ html = '''
     <table>
         <thead>
             <tr>
+                <th>ID</th>
                 <th>Speaker Ref</th>
-                <th>_Generated</th>
+                <th>Generated</th>
                 <th>FX</th>
             </tr>
         </thead>
@@ -56,6 +76,7 @@ for subdir in all:
     # Add a row to the HTML with media players
     html += f'''
         <tr>
+            <td>{mapping.get(speaker_ref, speaker_ref)}</td>
             <td>
                 {f'<audio controls><source src="{os.path.join(subdir_path, speaker_ref)}" type="audio/mpeg"></audio>' if d_file else ''}
             </td>
