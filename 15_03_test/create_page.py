@@ -18,9 +18,17 @@ html = '''
         </thead>
         <tbody>
 '''
+all= os.listdir(directory)
+# Extract the leading number from the directory name
+def extract_leading_number(dir_name):
+    match = re.match(r'(\d+)_', dir_name)
+    return int(match.group(1)) if match else 0
 
+# Sort the directories numerically
+all = sorted(all, key=extract_leading_number)
+print(all)
 # Iterate over each subdirectory in the directory
-for subdir in os.listdir(directory):
+for subdir in all:
     subdir_path = os.path.join(directory, subdir)
 
     # Skip if not a directory
