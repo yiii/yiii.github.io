@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full-Screen Observable Graph</title>
   <style>
+    :root {
+      --background-color: #333; /* Dark gray background */
+      --font-color: white; /* White font color */
+    }
+    [data-theme="dark"] {
+      background-color: var(--background-color);
+      color: var(--font-color);
+    }
     html, body {
       margin: 0;
       padding: 0;
-      background-color: #000000; /* Dark gray background */
-      color: white; /* White font color */
       font-family: Arial, sans-serif;
       overflow: hidden; /* Prevent scrolling */
     }
@@ -25,7 +31,4 @@
 </head>
 <body>
   <iframe 
-    src="https://observablehq.com/embed/64095df9b6c4ff85@834?cells=graph&hide=slider">
-  </iframe>
-</body>
-</html>
+    src="https://observablehq.com/embed/64095df9b6c4ff85@
